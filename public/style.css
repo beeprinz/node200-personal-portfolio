@@ -1,0 +1,58 @@
+body,html {
+    height: 100%;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.active {
+    float: left;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* p {
+    padding:20px;
+    margin-top:50px
+} */
+
+.parallax {
+    /* The image used */
+    background-image: url('https://i.pinimg.com/originals/29/d0/18/29d01802ae28184246868962385da37b.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
