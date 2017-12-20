@@ -13,6 +13,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .active {
@@ -41,9 +42,9 @@ li a:hover:not(.active) {
     margin-top:50px
 } */
 
-.parallax {
+.parallaxone {
     /* The image used */
-    background-image: url('https://i.pinimg.com/originals/29/d0/18/29d01802ae28184246868962385da37b.jpg');
+    background-image: url('http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg');
 
     /* Full height */
     height: 100%; 
@@ -55,4 +56,77 @@ li a:hover:not(.active) {
     background-size: cover;
 }
 
+.parallaxtwo {
+    /* The image used */
+    background-image: url('https://i.pinimg.com/originals/29/d0/18/29d01802ae28184246868962385da37b.jpg');
+    height: 50%; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutme {
+    text-align: center;
+    height:300px;
+    background-color:white;
+    padding: 25px;
+   
+}
+
+/* p.aboutmep {
+    padding: 25px;
+} */
+
+.projects{
+    text-align: center;
+    height:300px;
+    background-color:white;
+    padding: 25px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    /* column-count: 2; */
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+
+.wrapper{
+display: grid;
+grid-auto-rows: minmax(300px,auto);
+}
+
+.one{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three{
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.four{
+grid-column: 2;
+grid-row: 2;
+}
