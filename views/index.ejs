@@ -46,105 +46,76 @@
 <div class="parallaxtwo"></div>
        
 <div class="projects">
-  <h5>Collection of projects</h5>
-  <div class="wrapper">
-    <div class="one">
-        <div class="card">
-            <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>
-                <b>Project 1</b>
-              </h4>
-              <p>Project 1 description will go here...</p>
-            </div>
-          </div>
+  <h5 class="projectsheader">Collection of projects</h5>
+
+  <div class="band">
+      
+       <!-- grid item, containing a card -->
+       <div class="item-1">
+             <a href="https://bp-f1circuitfinder.herokuapp.com/" class="card">
+               <div class="thumb" style="background-image: url(http://ic.c4assets.com/brands/formula-1/series-2/episode-20/fe1b42cd-1d94-4ae4-8c9d-21d6e7273b6a.jpg?interpolation=progressive-bicubic&output-quality=90);"></div>
+               <article>
+                 <h1>Formula 1 Circuit Finder</h1>
+                 <p>Say stuff about using 2 api's and how great I am!</p>
+                 
+               </article>
+             </a>
+       </div>
+        
+       <div class="item-2">
+          <a href="https://bp-react100sdtopspots.herokuapp.com/" class="card">
+            <div class="thumb" style="background-image: url(https://i.imgur.com/wPVDry4.png);"></div>
+            <article>
+              <h1>San Diego Top Spots</h1>
+              <span>REACT</span>
+              <p>The goal of this project was to use an external web service to retrieve json data 
+                and use a loop to render a template to populate a list of the top 30 spots to visit in San Diego.                   
+              </p>
+            </article>
+          </a>
     </div>
-    <div class="two">
-        <div class="card">
-            <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>
-                <b>Project 1</b>
-              </h4>
-              <p>Project 1 description will go here...</p>
-            </div>
-          </div>
-    </div>
-    <div class="three">
-        <div class="card">
-            <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>
-                <b>Project 1</b>
-              </h4>
-              <p>Project 1 description will go here...</p>
-            </div>
-          </div>
-    </div>
-    <div class="four">    <div class="card">
-        <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4>
-            <b>Project 1</b>
-          </h4>
-          <p>Project 1 description will go here...</p>
-        </div>
-      </div>
-    </div>
-    
-    
-    
+
+    <div class="item-3">
+        <a href="https://bp-react100sdtopspots.herokuapp.com/" class="card">
+          <div class="thumb" style="background-image: url(https://i.imgur.com/wPVDry4.png);"></div>
+          <article>
+            <h1>Post title</h1>
+            <span>REACT</span>
+            <p>testing out some of the style for the p element. This text is longer than the first one! Now it's longer than the third</p>            
+            
+          </article>
+        </a>
   </div>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="column">
-      <div class="card">
-        <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <p>
-            <b>San Diego Top Spots</b>
-          </p>
-          <p>This project was crazaaayy!! Put Heroku link HERE</p>
-        </div>
-      </div>
-    </div>
 
+  <div class="item-4">
+      <a href="https://bp-react100sdtopspots.herokuapp.com/" class="card">
+        <div class="thumb" style="background-image: url(https://i.imgur.com/wPVDry4.png);"></div>
+        <article>
+          <h1>Post title is very long on this one! Mhhhmmmmm!</h1>
+          <p>testing out some of the style for the p element. This text is longer than the first one!</p>
+        </article>
+      </a>
+    </div>
+  </div>
+</div>
 
-      <div>
-        <div class="column">
-        <div class="card">
-          <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4>
-              <b>Project 1</b>
-            </h4>
-            <p>Project 1 description will go here...</p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div>
-    <div class="card">
-      <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4>
-          <b>Project 1</b>
-        </h4>
-        <p>Project 1 description will go here...</p>
-      </div>
-    </div>
+<div class="parallaxthree"></div>
+
+<div class="contact">
+<h5 class="contactheader">Contact Me</h5>
+<div class="contactform">
+    <form action="/thanks" method="POST">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
   
-    <div class="card">
-      <img src="https://i.imgur.com/wPVDry4.png" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4>
-          <b>Project 1</b>
-        </h4>
-        <p>Project 1 description will go here...</p>
-      </div>
-    </div>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="text">
+    
+      <input class="submitbutton" type="submit" value="Submit">
+    </form>
   </div>
 
 </div>
@@ -152,3 +123,13 @@
   </html>
 
 
+  <!-- <label for="firstName">First Name:</label>
+  <input id="firstName" name="firstName" type="text">
+
+  <label for="lastName">Last Name:</label>
+  <input id="lastName" name="lastName" type="text">
+
+  <label for="email">Email:</label>
+  <input id="email" name="email" type="text">
+
+  <input type="submit" /> -->
