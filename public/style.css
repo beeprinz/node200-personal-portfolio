@@ -79,20 +79,22 @@ li a:hover:not(.active) {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.aboutme {
+#aboutme {
     text-align: center;
     /* height:300px;
     get rid of height so it's dynamic */
     background-color:white;
-    padding: 25px;
+    padding: 50px;
+    
    
 }
 
-.projects{
+#projects{
     
     /* height:1000px;  getting rid of height makes it dynamic and move with media query*/
     background-color:white;
     padding-bottom: 25px;
+    padding-top: 50px;
 }
 
 .band {
@@ -179,15 +181,14 @@ li a:hover:not(.active) {
   }
 
   .projectsheader{
-      padding: 25px;
+      padding-bottom: 25px;
       text-align: center;
   }
 
-  .contact{
+  #contact{
     /* text-align: center; */
-    height:500px;
     background-color:white;
-    /* padding: 25px; */
+    /* padding-top: 50px; */
 }
 
 .contactheader{
@@ -202,3 +203,10 @@ li a:hover:not(.active) {
 .contactform .submitbutton:hover {
     background-color: #45a049;
 }
+
+/* a.aboutanchor{
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+} */
