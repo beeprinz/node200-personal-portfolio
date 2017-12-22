@@ -1,8 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyparser = require('body-parser')
-const accountSid = 'AC659a388bd3cf4917e7bfce29c98bf534';
-const authToken = '4f6c2a0bbf0c02287444c021772267f9';
+const env = require('dotenv').config();
+const accountSid = process.env.TWILIO_SID;
+const authToken = process.env.TWILIO_TOKEN;
+
 
 const client = require('twilio')(accountSid, authToken);
 
@@ -31,7 +33,8 @@ app.get('/contact', (req, res) => {
     res.render('contact');
   });
   
- app.post('/thanks', (req, res) => {    
+ app.post('/thanks', (req, res) => { 
+     console.log(accountSid,authToken);   
     client.messages.create({
         to: '+18587752036',
         from:'+16193542930 ',
@@ -44,6 +47,6 @@ app.get('/contact', (req, res) => {
   
 
 
-app.listen(8080, () =>{
-    console.log('listening at http://localhost.8080')
+app.listen(4000, () =>{
+    console.log('listening at http://localhost.4000')
 })
