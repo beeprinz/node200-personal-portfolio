@@ -10,10 +10,12 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    /* background-color: rgba(255,255,255,0.5); */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
+    opacity: .9;
 }
 
 .active {
@@ -204,9 +206,43 @@ li a:hover:not(.active) {
     background-color: #45a049;
 }
 
+.giticon {
+    color:inherit;
+    padding: 10px
+  }
+
+.giticon:hover{
+    color: #753085;
+    /* box-shadow: 0 0 5px green; */
+    text-shadow: 0 0 5px #753085;
+    transition: .7s;
+}
+
+.inicon {
+    color:inherit;
+    padding: 10px
+  }
+
+.inicon:hover{
+    color: #1178b3;
+    /* box-shadow: 0 0 5px green; */
+    text-shadow: 0 0 5px #1178b3;
+    transition: .7s;
+}
+
+  
 /* a.aboutanchor{
     display: block;
     position: relative;
     top: -250px;
     visibility: hidden;
 } */
+
+/* element selected{
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+} */
+
+/* for the fixed background image scrolling, need to get rid of the fixed background 
+http://vunature.com/wp-content/uploads/2016/10/beaches-sunset-clouds-pines-california-beach-broken-sky-sea-torrey-hill-diego-ocean-san-nature-images-full-hd-1920x1080.jpg*/
