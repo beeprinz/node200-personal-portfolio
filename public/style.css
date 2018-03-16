@@ -8,6 +8,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    /* padding-bottom:10%; */
     overflow: hidden;
     background-color: #333;
     /* background-color: rgba(255,255,255,0.5); */
@@ -60,7 +61,7 @@ li a:hover:not(.active) {
 
 .parallaxtwo {
     /* The image used */
-    background-image: url('http://vunature.com/wp-content/uploads/2016/10/beaches-sunset-clouds-pines-california-beach-broken-sky-sea-torrey-hill-diego-ocean-san-nature-images-full-hd-1920x1080.jpg');
+    background-image: url('http://s1.1zoom.net/big0/973/Parks_Houses_USA_Marina_473350.jpg');
     height: 50%; 
 
     /* Create the parallax scrolling effect */
@@ -72,7 +73,8 @@ li a:hover:not(.active) {
 
 .parallaxthree {
     /* The image used */
-    background-image: url('http://vunature.com/wp-content/uploads/2016/10/beaches-sunset-clouds-pines-california-beach-broken-sky-sea-torrey-hill-diego-ocean-san-nature-images-full-hd-1920x1080.jpg');
+    /* background-image: url('http://vunature.com/wp-content/uploads/2016/10/beaches-sunset-clouds-pines-california-beach-broken-sky-sea-torrey-hill-diego-ocean-san-nature-images-full-hd-1920x1080.jpg'); */
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2014/11/27/529832/f692b0f0c336ec04b06a26a8fc46551a.jpg');    
     height: 50%; 
 
     /* Create the parallax scrolling effect */
@@ -100,7 +102,7 @@ li a:hover:not(.active) {
 }
 
 .band {
-    width: 90%;
+    width: 60%;
     max-width: 1240px;
     margin: 0 auto;
      
@@ -113,14 +115,39 @@ li a:hover:not(.active) {
 
   @media only screen and (min-width: 500px) {
     .band {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }  
   }  
   /* changes the grid layout to 1fr x 1fr per row when resized under 500px */
 
   @media only screen and (min-width: 850px) {
     .band {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projectList {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+     
+    display: grid;
+     
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10%;
+  }
+
+  @media only screen and (min-width: 500px) {
+    .projectList {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }  
+  /* changes the grid layout to 1fr x 1fr per row when resized under 500px */
+
+  @media only screen and (min-width: 850px) {
+    .projectList {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -128,7 +155,7 @@ li a:hover:not(.active) {
     background: white;
     text-decoration: none;
     color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -139,7 +166,7 @@ li a:hover:not(.active) {
 
   .card:hover {
     top: -2px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
   }
 
   .card article {
@@ -181,6 +208,8 @@ li a:hover:not(.active) {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  
 
   .projectsheader{
       padding-bottom: 25px;
@@ -229,6 +258,40 @@ li a:hover:not(.active) {
     text-shadow: 0 0 5px #1178b3;
     transition: .7s;
 }
+
+.portfolioContent{
+    /* padding: 10%, 5%; */
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* button styling https://codepen.io/MSACODE/pen/uncli?limit=all&page=4&q=button*/
+
+
+  .portButton {
+    margin-right: 4px;
+    font-size: 1.0rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+    background-color: #009ac9;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portButton:hover {
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #009ac9;
+  }
+  
 
   
 /* a.aboutanchor{

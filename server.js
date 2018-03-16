@@ -29,8 +29,8 @@ app.get('/', (req,res) =>{
     res.render('index', data);
 });
 
-app.get('/contact', (req, res) => {
-    res.render('contact');
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
   });
   
  app.post('/thanks', (req, res) => { 
