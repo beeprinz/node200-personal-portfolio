@@ -1,157 +1,170 @@
 <html>
-    <head>
-      <title> Brendan's Portfolio </title>
-      <script type="text/javascript" src="jquery-3.2.1.min.js"></script>            
-      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
-      <script type="text/javascript" src="materialize.min.js"></script>      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-      <link rel="stylesheet" href="style.css" />
-      <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
-    </head>
-    <body>
-           
-        <div>      
-<ul>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#aboutme">About</a></li>
-  <li style="float:left"><a class="active">BRENDAN PRINZ</a></li>
-</ul>
-</div>
+<head>
+  <title> Brendan's Portfolio </title>
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+  <script type="text/javascript" src="materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
-<div>
-    
-</div>
+</head>
 
-<div class="parallaxone"></div>
+<body>
 
-<div id= "aboutme">
+  <nav>
+    <ul class='navUl'>
+      <li class='navLi'>
+        <a href="#contact">Contact</a>
+      </li>
+      <li class='navLi'>
+        <a href="#projects">Projects</a>
+      </li>
+      <li class='navLi'>
+        <a href="#aboutme">About</a>
+      </li>
+      <li class='navLi' style="float:left">
+        <a class="active">BRENDAN PRINZ</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div>
+
+  </div>
+
+  <div class="parallaxone">
+
+    <div id='hello'>
+      <h2>Brendan Prinz</h2>
+      <h4>Web Developer</h4>
+    </div>
+
+  </div>
+
+  <div id="aboutme">
     <h5>
-        <!-- I am <%= person.firstName %> <%= person.lastName %> -->
-        About Brendan
+      <!-- I am <%= person.firstName %> <%= person.lastName %> -->
+      About Me
     </h5>
-    <p class= "aboutmep">
-    Creating engaging and practical websites/applications is exciting to me. 
-    I love to learn and enjoy exploring new technologies and techniques to enhance my skillset as a web developer.
-    In my free time I enjoy hiking, camping as well as editing photos and video I captured using my drone. 
-    More things will go here...
+    <p class="aboutmep">
+      I am a real estate agent and full-stack web developer from San Diego, CA. I have always loved to learn and explore new technologies.
+      I have recently been making the transition into a full-time developer. Learning to code was something I had been interested
+      in for a while and I eventually decided to enroll in a full-time web development bootcamp at Origin Code Academy.
+    </p>
+    <p>
+      I discovered that I really enjoy the process of building applications. Using my creative skillset to turn an idea into a
+      fully functional application has been very rewarding to me. As my skillset grows I am excited to showcase my progress
+      through my work.
     </p>
     <div>
 
       <a href="https://github.com/beeprinz" class="giticon">
-      <i class="fab fa-github fa-3x"></i>
+        <i class="fab fa-github fa-3x"></i>
       </a>
       <a href="https://www.linkedin.com/in/brendan-prinz-5a68a2102/" class="inicon">
-      <i class="fab fa-linkedin-in fa-3x"></i>
+        <i class="fab fa-linkedin-in fa-3x"></i>
+      </a>
+      <a href="mailto:brendanprinz@gmail.com" class="emailicon">
+        <i class="far fa-envelope-open fa-3x"></i>
       </a>
     </div>
-    </div>
+  </div>
 
-<div class="parallaxtwo"></div>
-       
-<div id="projects">
-  <h5 class="projectsheader">Collection of projects</h5>
+  <div class="parallaxtwo"></div>
 
-  <div class="band">
-      
-       <!-- grid item, containing a card -->
+  <div id="projects">
+    <h5 class="projectsheader">Collection of Projects</h5>
 
-        <div id="indexItem-0">
-            <a href="/portfolio#project-1" class="card">
-              <div class="thumb" style="background-image: url(https://i.imgur.com/M46rMIz.png);"></div>
-              <article>
-                <h1>Pitch Portal</h1>
-                <p>This project utilizes 2 seperate api's, google maps and eregast formula 1 database. 
-                  I used the eregast api to pull data on the fomula 1 circuits around the world from the 2017 race season.
-                  You can then select a track from the dropdown and then see its location on the google map window.
-                </p>
-                
-              </article>
-            </a>
+    <div class="band">
+
+      <!-- grid item, containing a card -->
+
+      <div id="indexItem-0">
+        <a href="/portfolio#project-1" class="card">
+          <div class="thumb" style="background-image: url(https://i.imgur.com/M46rMIz.png);"></div>
+          <article>
+            <h1>Pitch Portal</h1>
+            <p>This project utilizes 2 seperate api's, google maps and eregast formula 1 database. I used the eregast api to
+              pull data on the fomula 1 circuits around the world from the 2017 race season. You can then select a track
+              from the dropdown and then see its location on the google map window.
+            </p>
+
+          </article>
+        </a>
       </div>
-        
-       <div id="indexItem-1">
-          <a href="/portfolio#project-2" class="card">
-            <div class="thumb" style="background-image: url(https://i.imgur.com/VOHc1hD.png);"></div>
-            <article>
-              <h1>Redux Movie Finder</h1>
-              <!-- <span>REACT</span> -->
-              <p>Search for your favorite movies using this fun movie finder app that pulls movie data from the OMDb API. 
-                 Search results are returned based on the title and include some basic information on the movie. 
-                 Clicking the button for more information will pull additional data from the OMDb API on that specific movie.  
-              </p>
-            </article>
-          </a>
-    </div>
 
-    <div class="item-2">
-        <a href="https://bp-f1circuitfinder.herokuapp.com/" class="card">
-          <div class="thumb" style="background-image: url(http://ic.c4assets.com/brands/formula-1/series-2/episode-20/fe1b42cd-1d94-4ae4-8c9d-21d6e7273b6a.jpg?interpolation=progressive-bicubic&output-quality=90);"></div>
+      <div id="indexItem-1">
+        <a href="/portfolio#project-2" class="card">
+          <div class="thumb" style="background-image: url(https://i.imgur.com/VOHc1hD.png);"></div>
+          <article>
+            <h1>Redux Movie Finder</h1>
+            <!-- <span>REACT</span> -->
+            <p>Search for your favorite movies using this fun movie finder app that pulls movie data from the OMDb API. Search
+              results are returned based on the title and include some basic information on the movie. Clicking the button
+              for more information will pull additional data from the OMDb API on that specific movie.
+            </p>
+          </article>
+        </a>
+      </div>
+
+      <div id="indexItem-2">
+        <a href="/portfolio#project-3" class="card">
+          <div class="thumb" style="background-image: url(https://i.imgur.com/R0HuxK1.png);"></div>
           <article>
             <h1>Formula 1 Circuit Finder</h1>
-            <p>This project utilizes 2 seperate api's, google maps and eregast formula 1 database. 
-              I used the eregast api to pull data on the fomula 1 circuits around the world from the 2017 race season.
-              You can then select a track from the dropdown and then see its location on the google map window.
+            <p>This project utilizes 2 seperate api's, google maps and eregast formula 1 database. I used the eregast api to
+              pull data on the fomula 1 circuits around the world from the 2017 race season. You can then select a track
+              from the dropdown and then see its location on the google map window.
             </p>
-            
+
           </article>
         </a>
-  </div>
+      </div>
 
-    <div class="item-3">
-        <a href="https://bp-react100vstda.herokuapp.com/" class="card">
-          <div class="thumb" style="background-image: url(https://grantcardonetv.com/wp-content/uploads/todo_list.jpg);"></div>
+      <div id="indexItem-3">
+        <a href="/portfolio#project-4" class="card">
+          <div class="thumb" style="background-image: url(https://i.imgur.com/h0HZD6F.png);"></div>
           <article>
-            <h1>React To Do List</h1>
-            <!-- <span>REACT</span> -->
-            <p>This to do list app takes the user's input in the text area along with a priority level selection then saves the user's input onto a color coded list.
-               The user can then choose to edit each item in the list and then save the new text and priority. They may also choose to delete their item from the list as well.
-              </p>            
-            
+            <h1>Redux Weather App</h1>
+            <p>This weather app was built using redux and utilizes the open weather map api. After selecting a city, live weather
+              data will be requested from the open weather map api and the current conditions will be displayed. It will
+              also display the history of the recent cities you selected.
+            </p>
           </article>
         </a>
-  </div>
-
-  <div class="item-4">
-      <a href="https://bp-weatherapp.herokuapp.com/" class="card">
-        <div class="thumb" style="background-image: url(https://i.imgur.com/h0HZD6F.png);"></div>
-        <article>
-          <h1>Redux Weather App</h1>
-          <p>This weather app was built using redux and utilizes the open weather map api. After selecting a city, live weather data will be requested from the open weather map api and the current conditions will be displayed. It will also display the history of the recent cities you selected.  
-            </p>
-        </article>
-      </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="parallaxthree"></div>
+  <div class="parallaxthree"></div>
 
-<div id="contact">
-<h5 class="contactheader">Contact Me</h5>
-<div class="contactform">
-    <form action="/thanks" method="POST">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="email">Email:</label>
-      <input id="email" name="email" type="text">
-    
-      <input class="submitbutton" type="submit" value="Submit">
-    </form>
+  <div id="contact">
+    <h5 class="contactheader">Contact Me</h5>
+    <div class="contactform">
+      <form action="/thanks" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="text">
+
+        <input class="portButton" type="submit" value=" Submit ">
+      </form>
+    </div>
+
   </div>
+</body>
 
-</div>
-    </body>
-  </html>
+</html>
 
 
-  <!-- <label for="firstName">First Name:</label>
+<!-- <label for="firstName">First Name:</label>
   <input id="firstName" name="firstName" type="text">
 
   <label for="lastName">Last Name:</label>

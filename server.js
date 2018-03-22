@@ -47,6 +47,6 @@ app.get('/portfolio', (req, res) => {
   
 
 
-app.listen(4000, () =>{
+app.listen(process.env.PORT || 4000, () =>{
     console.log('listening at http://localhost.4000')
 })
